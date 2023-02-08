@@ -32,14 +32,14 @@
 		var urlNoJson = "https://es.wikipedia.org/wiki/" + searchName;
 
 		fetch(url)
-			// Transform the data into json, extract json from response object given by the server
+			// Transform the data into JSON, extract JSON from response object given by the server
 			.then((resp) => resp.json())
 			.then(function (data) {
 				//console.log(data);
 				//console.log("nombre de branches : "+ data.length);
 
 				if (data[1].length == 0) {
-					wikid.insertAdjacentHTML('beforeend', '<li>Pas de résultat pour cette recherche</li>');
+					wikid.insertAdjacentHTML('beforeend', '<li>No hay resultados para su consulta. Inténtelo de nuevo.</li>');
 				}
 				else {
 					framer.insertAdjacentHTML('beforeend', '<iframe id="dispays" src="' + urlNoJson + '" width="100%" height="900"></iframe>');
