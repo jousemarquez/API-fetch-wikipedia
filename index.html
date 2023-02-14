@@ -9,45 +9,37 @@
     <link rel="stylesheet" href="css/styles.css">
     <script type="text/javascript" src="js/wiki.js" defer></script>
     <script type="text/javascript" src="js/additions.js" defer></script>
-    <script type="text/javascript" src="js/youtube.js" defer></script>
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <h1>Wiki Extractor</h1>
-            <h4>Get highlights about your Birthday year and share with your fellas!</h4>
-        </header>
-
-        <button type="button" onClick="onClick()">❤️</button>
-        <p>Love: <a id="love">0</a></p>
-
-        <div class="content">
-            <form action="#" method="post">
+    <main>
+        <h1>
+            <span class="blue">Wiki Extractor</span>
+            <h2>Get highlights about your Birthday year and share with your fellas!</h2>
+        </h1>
+        <div id="container">
+            <div id="container_block">
                 <div class="field">
-                    <h2>Insert your Birthday year here:</h2>
-                    <label for="namer">Year: </label>
+                    <h3>Insert your Birthday year here:</h3>
+                    <button type="button" onClick="onClick()">❤️</button><span id="love">0</span>
+                    <label for="namer">Search:</label>
                     <input type="text" name="namer" id="namer" />
+                    <button type="button" id="run" class="button btn btn-success">Search</button>
+                    <button class="buttondelete" onclick="ocultarEjercicio1()">Borrar</button>
                 </div>
+                <section id="explain">
+                    <ol id="wiki"></ol>
+                    <div id="framer"></div>
+                </section>
                 <div class="actions">
-                    <button type="button" id="run" class="btn btn-success">Search</button>
                 </div>
-            </form>
-
-            <section class="explain" style="clear:both;">
-                <p>JSON Extraction Test</p>
-                <div style="width:50%;float:left;">
-                    <ul id="wiki"></ul>
-                </div>
-                <div style="width:50%;float:left;" id="framer"></div>
-            </section>
+            </div>
         </div>
-    </div>
+    </main>
     <script src="wiki.js"></script>
     <footer>
-        <h5>Based on original code by <a href="https://github.com/cevaho/API-fetch-wikipedia">cevaho.</a> Please,
-            starred
-            him!</h5>
+        <h2>Based on original code by <a href="https://github.com/cevaho/API-fetch-wikipedia">cevaho.</a> Please,
+            starred him!</h2>
     </footer>
 </body>
 
