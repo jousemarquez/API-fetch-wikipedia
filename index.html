@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script type="text/javascript" src="js/wiki.js" defer></script>
+    <script type="text/javascript" src="js/wiki2.js" defer></script>
     <script type="text/javascript" src="js/additions.js" defer></script>
 </head>
 
 <body>
     <main>
         <header>
-            <h1><span class="blue">Wiki Extractor</span>
+            <h1><span class="blue">Finder</span>
                 <h2>Get highlights about your Birthday year and share with your fellas!</h2>
             </h1>
         </header>
@@ -26,12 +26,10 @@
                     <button type="button" onClick="onClick()">❤️</button><span id="love">0</span>
                 </div>
                 <div id="item2">
-                <label for="namer">Search:</label>
-                    <input type="text" name="namer" id="namer" />
+                    <input type="text" name="namer" id="namer" placeholder="Birth Year" required="" />
                 </div>
                 <div id="item3">
-                    <button type="button" id="run" class="button btn btn-success">Search</button>
-                    <button class="buttondelete" onclick="ocultarEjercicio1()">Borrar</button>
+                    <button type="button" id="run" class="button btn btn-success"><span>Search</span></button>
                 </div>
                 <section id="explain">
                     <ol id="wiki"></ol>
@@ -44,7 +42,7 @@
     </main>
     <script src="wiki.js"></script>
     <footer>
-        <h4>Based on original code by <a href="https://github.com/cevaho/API-fetch-wikipedia">cevaho.</a> Please,
+        <h4>Based on original code by <a href="https://github.com/cevaho/API-fetch-wikipedia">cevaho</a>. Please,
             starred him!</h4>
     </footer>
 </body>

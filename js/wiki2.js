@@ -65,7 +65,7 @@
 				var newsrc = data[3][idier];//console.log(nwsrc);
 				framer.innerHTML = "";
 				wikid.innerHTML = "";
-				framer.insertAdjacentHTML('beforeend', '<iframe id="dispays" src="' + newsrc + '" width="100%" height="900"></iframe>');
+				framer.insertAdjacentHTML('beforeend', '<iframe id="display" src="' + newsrc + '" width="100%" height="900"></iframe>');
 				//displayer.setAttribute("src",newsrc);
 				var partNom = "<h2>" + data[1][idier] + "</h2>";
 				var partDef = "<p>" + data[2][idier] + "</p>";
@@ -85,13 +85,13 @@
 
 		//si input vide indique un message : "pas de résultat"
 		if (data[1].length == 0) {
-			wikid.insertAdjacentHTML('beforeend', '<li>Pas de résultat pour cette recherche</li>');
+			wikid.insertAdjacentHTML('beforeend', '<li>No hay resultados para esa búsqueda</li>');
 		}
 
-		//autrement affiche 10 résultats par défaut
+		//devuelve 10 resultados
 		else {
 			console.log(data[1].length);
-			framer.insertAdjacentHTML('beforeend', '<iframe id="dispays" src="' + urlNoJson + '" width="100%" height="900"></iframe>');
+			framer.insertAdjacentHTML('beforeend', '<iframe id="display" src="' + urlNoJson + '></iframe>');
 			for (i = 0; i < data[1].length; i++) {
 				var partNom = "<h2>" + data[1][i] + "</h2>";
 				var partDef = "<p>" + data[2][i] + "</p>";
@@ -112,7 +112,7 @@
 	function liqueur(data) {
 		var liClickLength = document.querySelectorAll("#wiki li").length; console.log(liClickLength);
 		var liClick = document.querySelectorAll("#wiki li");
-		var displayer = document.querySelector("#dispays");
+		var displayer = document.querySelector("#display");
 
 
 		for (const liker of liClick) {

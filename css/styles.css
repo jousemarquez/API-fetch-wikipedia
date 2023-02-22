@@ -97,6 +97,7 @@ main {
 	align-items: center;
 	justify-content: space-between;
 	width: auto;
+	gap: 50px;
 	min-height: 350px;
 	background-color: white;
 	border-top-left-radius: 20px;
@@ -128,6 +129,35 @@ main {
 	width: auto;
 }
 
+/*FORM LABEL*/
+
+#form__label {
+	font-size: 1.2rem;
+	margin-top: 0.7rem;
+}
+
+#namer {
+	font-family: 'Roboto', sans-serif;
+	color: #333;
+	font-size: 1.2rem;
+	margin: 0 auto;
+	padding: 1.5rem 2rem;
+	border-radius: 0.2rem;
+	background-color: rgb(255, 255, 255);
+	border: 3px solid #784BA0;
+	animation: gradient 5s ease infinite;
+	width: 316px;
+	display: block;
+	transition: all 0.3s;
+}
+
+/* LISTA DE RESULTADOS */
+
+#displays {
+	width: auto;
+	height: 20rem;
+}
+
 /* Botón Style */
 
 .container_buttons {
@@ -142,33 +172,18 @@ main {
 	background-color: #74EBD5;
 	background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
 	color: #FFFFFF;
+	font-size: 1.2rem;
 	border: 3px solid #7150A3;
 	border-radius: 10px;
 	text-align: center;
-	width: 45%;
+	width: 316px;
 	transition: all 0.5s;
 	cursor: pointer;
 	padding: 10px;
 	margin: 5px;
 }
 
-.buttondelete {
-	display: inline-block;
-	background-color: #FF9A8B;
-	background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
-	color: #FFFFFF;
-	border: 3px solid #7150A3;
-	border-radius: 10px;
-	text-align: center;
-	width: 45%;
-	transition: all 0.5s;
-	cursor: pointer;
-	padding: 10px;
-	margin: 5px;
-}
-
-.button span,
-.buttondelete span {
+.button span {
 	cursor: pointer;
 	display: inline-block;
 	position: relative;
@@ -184,24 +199,13 @@ main {
 	transition: 0.5s;
 }
 
-.button:hover span,
-.buttondelete:hover span {
+.button:hover span {
 	padding-right: 25px;
 }
 
-.button:hover span:after,
-.buttondelete:hover span:after {
+.button:hover span:after {
 	opacity: 1;
 	right: 0;
-}
-
-.buttondelete span:after {
-	content: '\00D7';
-	position: absolute;
-	opacity: 0;
-	top: 0;
-	right: -20px;
-	transition: 0.5s;
 }
 
 /* BLOQUE CONSULTAS */

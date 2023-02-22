@@ -6,7 +6,7 @@
 	function liqueur(data) {
 		var liClickLength = document.querySelectorAll("#wiki li").length; console.log(liClickLength);
 		var liClick = document.querySelectorAll("#wiki li");
-		var displayer = document.querySelector("#dispays");
+		var displayer = document.querySelector("#display");
 
 		for (const liker of liClick) {
 			//console.log(liker.id);
@@ -42,7 +42,7 @@
 					wikid.insertAdjacentHTML('beforeend', '<li>No hay resultados para su consulta. Inténtelo de nuevo.</li>');
 				}
 				else {
-					framer.insertAdjacentHTML('beforeend', '<iframe id="dispays" src="' + urlNoJson + '" width="100%" height="900"></iframe>');
+					framer.insertAdjacentHTML('beforeend', '<iframe id="display" src="' + urlNoJson + '" width="100%" height="900"></iframe>');
 					for (i = 0; i < data[1].length; i++) {
 						var partNom = "<h2>" + data[1][i] + "</h2>";
 						var partDef = "<p>" + data[2][i] + "</p>";
