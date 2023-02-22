@@ -21,7 +21,7 @@
 
 	}/*end liqueur*/
 
-	// to get the user firstname clicking on the customize button
+	// para obtener el nombre del usuario haciendo clic en el botón personalizar
 	document.querySelector("#run").addEventListener("click", function () {
 
 		var searchName = document.querySelector("#namer").value;
@@ -32,7 +32,7 @@
 		var urlNoJson = "https://es.wikipedia.org/wiki/" + searchName;
 
 		fetch(url)
-			// Transform the data into JSON, extract JSON from response object given by the server
+			// Transforma los datos en JSON, extrae JSON del objeto de respuesta dado por el servidor
 			.then((resp) => resp.json())
 			.then(function (data) {
 				//console.log(data);

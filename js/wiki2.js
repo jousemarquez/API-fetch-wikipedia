@@ -7,7 +7,7 @@
 
 	inputer.insertAdjacentHTML('afterend', '<div id="bloqueur"><ul id="listing"></ul></div>');
 
-	//traite les données en json depuis l'url
+	//procesar los datos en json desde la url
 	function goDataJson(quelleSource) {
 
 		var searchName = document.querySelector("#namer").value;
@@ -18,7 +18,7 @@
 		var urlNoJson = "https://es.wikipedia.org/wiki/" + searchName;
 
 		fetch(url)
-			// Transform the data into json, extract json from response object given by the server
+			// Transforma los datos en json, extrae json del objeto de respuesta dado por el servidor
 			.then((resp) => resp.json())
 			.then(function (data) {
 				//console.log(data);
@@ -80,10 +80,10 @@
 	}/*end displayResultLinkList*/
 
 
-	//affiche le résultat après le clic sur le btn cherchez
+	// Muestra el resultado después de hacer clic en el botón de búsqueda
 	function displayDataResult(data, urlNoJson) {
 
-		//si input vide indique un message : "pas de résultat"
+		//Si se introduce un dato incorrecto, devuelve mensaje de error.
 		if (data[1].length == 0) {
 			wikid.insertAdjacentHTML('beforeend', '<li>No hay resultados para esa búsqueda</li>');
 		}
@@ -108,7 +108,7 @@
 	}/*end displayDataResult*/
 
 
-	// affiche dans l'iframe le sujet du <li> cliqué
+	// muestra en el iframe el tema del clic <li>
 	function liqueur(data) {
 		var liClickLength = document.querySelectorAll("#wiki li").length; console.log(liClickLength);
 		var liClick = document.querySelectorAll("#wiki li");
@@ -129,7 +129,7 @@
 	}/*end liqueur*/
 
 
-	// to get the user firstname clicking on the customize button
+	// para obtener el nombre del usuario haciendo clic en el botón personalizar
 	document.querySelector("#run").addEventListener("click", function () {
 		quelleSource = "run";
 		goDataJson(quelleSource);
