@@ -1,40 +1,32 @@
-# Commencer avec les API
+# Funcionamiento de la API
 
-## Outils
-- [Postman](https://www.getpostman.com/) -> Pour jouer avec les API
-- [JSONVIEW](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=fr) -> voir le JSON correctement dans chrome
+## Herramientas
+- [POSTMAN](https://www.getpostman.com/) -> Para jugar con las API
+- [JSONVIEW](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=fr) -> ver JSON correctamente en Chrome
 
-## Avant Propos
+## Prólogo
 
-L'objectif de cette séquence pédagogique est de vous laisser découvrir les API par vous-mêmes. Des indices seront bien évidemment glissés ça et là dans les exercices pour orienter vos recherches.
+El objetivo de esta secuencia educativa es permitirle descubrir las API por sí mismo. Por supuesto, se deslizarán pistas aquí y allá en los ejercicios para guiar su investigación.
 
-Grâce à cette URL https://project-622bb.firebaseio.com/BeCode.json affichez toutes les informations recevables de cette API.    
-Faites bien la différence entre synchrone et asynchrone.
+A través de esta URL https://project-622bb.firebaseio.com/BeCode.json se muestra toda la información que se puede recibir de esta API.
 
-Utiliser cette URL dans votre navigateur ou dans Postman afin de faire des appels dans l'API de wikipedia et de faire des recherches.
-https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search=terre ou https://en.wikipedia.org/w/api.php?origin=*&action=opensearch&search=terre
+Diferencias entre conexión síncrona y asíncrona
 
-- [documentation](https://www.mediawiki.org/w/api.php?action=help&modules=opensearch)
+Use esta URL en su navegador o en Postman para realizar llamadas y búsquedas a la API de wikipedia.
+https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search=earth o https://en.wikipedia.org/w/api.php?origin=*&action=opensearch&search=earth
 
-
-## Exercice [wikinside.html](https://cevaho.github.io/API-fetch-wikipedia/wikinside.html)
-
-Utiliser la même API. Au lieu de faire la recherche via votre navigateur ou Postman, faites la recherche à l'aide d'un input dans votre HTML. 
-- Au submit, faites afficher les résultats de votre recherche dans votre HTML dans un iframe.
-- Au clic sur une des réponse, changer l'affichage de l'iframe
-- lors de l'inscription de la recherche, donner une liste de proposition
-- lors du clic sur une proposition, afficher la réponse pour cette proposition
+- [documentación](https://www.mediawiki.org/w/api.php?action=help&modules=opensearch)
 
 
-## Exercice [onkeyup.html](https://cevaho.github.io/API-fetch-wikipedia/onkeyup.html)
+## Ejercicio [wikinside.html](https://cevaho.github.io/API-fetch-wikipedia/wikinside.html)
 
-Créer une fonctionnalité qui permette de faire une recherche instantanée avec un buffer. Bertrand appelle "buffer" le fait de lancer la recherche vers le serveur uniquement lorsqu'on n'a rien tapé dans l'input après quelques temps (par exemple deux secondes). D'office, ça sera réalisé en asynchrone.
-
-
-## BONUS
-
-Faites que ça soit joli. En utilisant un framework CSS par exemple.
-
+Usa la misma API. En lugar de buscar a través de su navegador o Postman, busque usando una entrada en su HTML.
+- Al enviar, muestre los resultados de su búsqueda en su HTML en un iframe.
+- Al hacer clic en una de las respuestas, cambia la visualización del iframe
+- al registrar la investigación, dar una lista de propuestas
+- al hacer clic en una propuesta, mostrar la respuesta para esta propuesta
 
 
+## Ejercicio [onkeyup.html](https://cevaho.github.io/API-fetch-wikipedia/onkeyup.html)
 
+Cree una función que permita la búsqueda instantánea con un búfer. Bertrand llama "almacenamiento en búfer" al hecho de lanzar la búsqueda hacia el servidor solo cuando no se ha escrito nada en la entrada después de un tiempo (por ejemplo, dos segundos). Automáticamente, esto se hará de forma asíncrona.
