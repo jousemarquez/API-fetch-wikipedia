@@ -120,7 +120,7 @@ header img {
 	justify-content: space-between;
 	width: auto;
 	gap: 50px;
-	min-height: 350px;
+	min-height: 250px;
 	background-color: white;
 	border-top-left-radius: 20px;
 	border-bottom-right-radius: 20px;
@@ -146,6 +146,12 @@ header img {
 }
 
 #item3 {
+	display: flex;
+	justify-items: center;
+	width: auto;
+}
+
+#item4 {
 	display: flex;
 	justify-items: center;
 	width: auto;
